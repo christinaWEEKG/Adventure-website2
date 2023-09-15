@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <link rel="icon" href= "images/favicon.ico" type= "image/x-icon" sizes="16x16">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Travel_Styles.css">
+
+    <!-- main container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Adventure World</title>
+</head>
+
+<body>
+    <header class="row">
+        <div class="col-12">
+            <!-- Nav-->
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+              <div class="container">
+
+                <!--  logo -->
+                <a href="index.html" class="navbar-brand text-primary">
+                  <img src="images/mapLoding_64.gif" style="height: 30px;"> Adventure World
+                </a>
+                
+                <!--  collapse navigation bar-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myToggleNav" aria-controls="myToggleNav"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-center" id="myToggleNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="Travel_Package.html" id="navbardrop" 
+                        data-toggle="dropdown">Tours</a>
+                        <div class="dropdown-menu bg-secondary">
+                          <a class="dropdown-item" href="Travel_Package.html">Package</a>
+                          <a class="dropdown-item" href="Travel_Free_and_Easy.html">Free & Easy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="Travel_Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="Travel_AboutUs.html">About us</a>
+                    </li>
+                  </ul>
+                </div>  <!-- navigation bar -->
+              </div>  <!-- container  -->
+          </nav> <!-- nav  -->
+        </div> <!-- col-12 -->
+    </header>
+
+          <!-- Carousel: main images (images from Unsplash)- slide show-->
+          <div id="slideshow" class="carousel slide" data-ride="carousel">
+
+            <!-- add indicators-->
+            <ul class="carousel-indicators ">
+              <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+              <li data-target="#slideshow" data-slide-to="1"></li>
+              <li data-target="#slideshow" data-slide-to="2"></li>
+            </ul>
+
+            <!-- add captions--><!-- images taken from Unsplash  -->
+            <!-- 1st slide  -->
+            <div class="carousel-inner">
+              <div class="carousel-item active"> 
+                <img src="images/SlideShow1_mountain.jpg" alt="mountain">
+                  <div class="carousel-caption">
+                    <h1>Time for a New<h1 class="text-warning">Adventure?</h1></h1>  
+                  </div>   
+              </div>
+
+              <!--2nd slide  -->
+              <div class="carousel-item">
+                <img src="images/SlideShow2_beach.jpg" alt="beach">
+                  <div class="carousel-caption">
+                    <h1 >Just to chill &<h1 class="text-info">Relax?</h1></h1> 
+                  </div>   
+              </div>
+
+              <!-- 3rd slide  -->
+              <div class="carousel-item">
+                <img src="images/SlideShow3_maldives.jpg" alt="maldives">
+                  <div class="carousel-caption">
+                    <h1>Keen to try something<h1 class="text-success">different?</h1></h1> 
+                  </div>   
+              </div>
+            </div> <!-- carousel inner -->
+          </div> <!-- id "slideshow"-->
+
+          <!-- to add left and right indicators-->
+          <a class="carousel-control-prev pb-5" href="#slideshow" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next pb-5" href="#slideshow" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+      
+          <!-- Form: search for destination (inline format)-->
+          <form class="form-inline justify-content-center p-3 bg-dark text-white" action="Travel_Package.html">
+
+            <!-- start day of tour -->
+            <label for="StartDay" class="mr-sm-2">Start Day</label>
+            <input type="date" class="form-control mb-2 mr-sm-2"id="StartDay">
+
+            <!--end day of tour -->
+            <label for="EndDay" class="mr-sm-2">End Day</label>
+            <input type="date" class="form-control mb-2 mr-sm-2" id="EndDay"> 
+
+            <!-- dropdown to choose country of preference-->
+            <label for="Wheretogo" class="mr-sm-2">Where to go</label>	
+              <select name="country" class="custom-select mb-2 mr-sm-2">
+                <option selected>location</option>
+                <option value="country1" >Iceland</option>
+                <option value="country2" >Japan</option>
+                <option value="country3" >Korea</option>
+                <option value="country4">China</option>
+                <option value="country5">Maldives</option>
+              </select>
+
+            <!-- search button with search icon -->
+            <div class="input-group pb-2">
+              <label for="check" class="mr-sm-2">Check </label>
+              <div class="input-group">
+                  <button class="btn btn-info" type="submit">
+                    <i class="fa fa-search fa-1x pl-5 pr-5"></i>
+                  </button>
+              </div>
+            </div>
+          </form>
+
+         <!-- main container -->
+         <div class="container-fluid">
+            <div class= "row">
+              
+              <!-- Top Destinations : title-->
+              <article class="col-lg text-center p-4">
+                <h3> Around the world</h3><br>
+                <h1 class="text-success" >
+                  <img src="images/starfish.png" alt="starfish" 
+                  class="img-fluid" style="height: 100px; width:100px"> Top Destinations
+                  <img src="images/seashell.png" alt="seashell" 
+                  class="img-fluid" style="height: 100px; width:100px">
+                </h1><br> 
+
+                <p>Contact us for more information.</p>
+                <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a> 
+              </article>
+
+            </div> <!-- row  -->
+                    
+            <!-- 1st row of Top Destinations (): content with tooltip-->   
+            <!-- all images from Unsplash -->
+
+            <!-- 3 images placed in col-2, col-4 and col-2 format-->
+            <div class="row justify-content-center bg-light pt-5">
+              <div class="col-sm-2 p-1">
+                <img src="images/TopDestination_NorthernLights.jpg" alt="NorthernLights" class="img-fluid">
+                  <div class="caption text-info">
+                    <h3>NorthernLights</h3>
+                    <a title="More info on the destination" href="Travel_Free_and_Easy.html" class="btn btn-default" role="button">Read more</a>
+                  </div>
+              </div>
+    
+              <div class="col-sm-4 p-1">
+                <img src="images/TopDestination_Vietnam.jpg" alt="Vietnam" class="img-fluid">
+                  <div class="caption text-success">
+                    <h3>Vietnam</h3>  
+                    <a title="More info on the destination" href="Travel_Package.html" class="btn btn-default" role="button">Read more</a>  
+                  </div>
+              </div>
+    
+              <div class="col-sm-2 p-1">
+                <img src="images/TopDestination_Korea.jpg" alt="Korea" class="img-fluid">
+                  <div class="caption text-warning">
+                    <h3>Korea</h3>
+                    <a title="More info on the destination" href="Travel_Package.html" class="btn btn-default" role="button">Read more</a>
+                  </div>
+              </div>
+            </div> <!-- 1st row of top destinations-->
+
+            <!-- 2nd row of Top Destinations-->
+            <div class="row justify-content-center bg-light pb-5">
+              <div class="col-sm-2 p-1">
+                <img src="images/TopDestination_Japan.jpg" alt="Japan" class="img-fluid">
+                  <div class="caption text-primary">
+                    <h3>Japan</h3>
+                    <a title="More info on the destination" href="Travel_Free_and_Easy.html" class="btn btn-default" role="button">Read more</a>
+                  </div>
+              </div>
+    
+              <div class="col-sm-2 p-1">
+                <img src="images/TopDestination_Maldives.jpg" alt="Maldives" class="img-fluid">
+                  <div class="caption text-warning">
+                    <h3>Maldives</h3>  
+                    <a title="More info on the destination" href="Travel_Package.html" class="btn btn-default" role="button">Read more</a>  
+                  </div>
+              </div>
+    
+              <div class="col-sm-4 p-1">
+                <img src="images/TopDestination_Finland.jpg" alt="Finland" class="img-fluid">
+                  <div class="caption text-secondary">
+                    <h3>Finland</h3>
+                    <a title="More info on the destination" href="Travel_Free_and_Easy.html" class="btn btn-default" role="button">Read more</a>
+                  </div>
+                </div>
+            </div> <!-- 2nd row of top destinations -->
+
+            <!-- View all destination button-->
+            <div class="row justify-content-center bg-light pb-5">
+              <a href="Travel_Package.html" class="btn btn-secondary" role="button">View all Destinations</a>
+            </div>
+
+            <!-- Best Sellers: title-->
+            <div class= "row">
+              <article class="col-lg text-center p-5">
+                <h3> Around the world</h3><br>
+                <h1 class="text-success"><img src="images/Ms_Piggy.png" style= "height:90px; width:100px"> 
+                  Best Sellers</h1><br> 
+                <p>Contact us for more information.</p>
+                <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a>
+              </article>
+            </div>
+
+            <!-- Carousel: Best sellers -slide show  --->
+
+          <div id="slideshow_BestSeller" class="carousel slide" data-ride="carousel">
+
+            <!-- add indicators-->
+              <ul class="carousel-indicators">
+                <li data-target="#slideshow_BestSeller" data-slide-to="0" class="active"></li>
+                <li data-target="#slideshow_BestSeller" data-slide-to="1"></li>
+              </ul>
+          
+
+            <!-- Best Sellers section: 1st row-container for 4 images (images from Unsplash, CTC Travel, Chan's brother Travel)-->
+              <section class="carousel-inner section pb-5 ">
+                <div class="container-fluid">
+
+                  <div class="carousel-item active ">
+                    <div class="row bg-light pt-5 pb-5">
+
+
+                      <!-- 1st BestSeller in 1st row: Iceland -->
+                      <div class="col-sm-3 p-4 pb-5 text-center">
+                        <a href="Travel_Package.html"><img src="images/BestSeller_Iceland.jpg" alt="Iceland" class="img-fluid" >
+                          <div class="caption">
+                            <img src="images/BestSeller.png" alt="best seller" class="img-fluid" > 
+                          </div>
+                          <h6>8D 7N Iceland Circle</h6>
+                        </a>
+                      </div>
+                        
+                      <!-- 2nd BestSeller in 1st row: China -->
+                      <div class="col-sm-3 p-4 pb-5 text-center">
+                        <a href="Travel_Package.html"><img src="images/BestSeller_China.jpg" alt="China" class="img-fluid" >
+                          <div class="caption">
+                            <img src="images/BestSeller.png" alt="best seller" class="img-fluid">   
+                          </div>
+                            <h6> 8D Wulong Jinfo/ Qianjiang + ChongQing</h6>
+                        </a>
+                      </div>
+
+                      <!-- 3rd BestSeller in 1st row: Japan -->
+                      <div class="col-sm-3 p-4 pb-5 text-center">
+                        <a href="Travel_Free_and_Easy.html"><img src="images/BestSeller_Japan.jpg" alt="Japan" class="img-fluid">
+                          <div class="caption">
+                            <img src="images/BestSeller.png" alt="best seller" class="img-fluid">
+                          </div>
+                            <h6>8D 7N Best of Japan </h6>
+                        </a>
+                      </div>
+
+                      <!-- 4th BestSeller in 1st row: Hokkaido-->
+                      <div class="col-sm-3 p-4 pb-5 text-center">
+                        <a href="Travel_Free_and_Easy.html"><img src="images/BestSeller_Hokkaido.jpg" alt="Hokkaido" class="img-fluid">
+                          <div class="caption">
+                            <img src="images/BestSeller.png" alt="best seller" class="img-fluid">
+                          </div>
+                            <h6>5D 4N Hokkaido delight</h6>
+                        </a>
+                      </div>
+                  </div> <!-- row  -->
+                </div> <!-- carousel-item -->
+
+                    <!--Best Sellers section : 2nd row-container for 4 images (images from Unsplash, CTC Travel, Chan's brother Travel)-->
+                <div class="carousel-item" >
+                  <div class="row pt-5 pb-5 bg-light">
+
+                    <!-- 1st BestSeller in 2nd row: Alaska-->
+                    <div class="col-sm-3 p-4 pb-5 text-center">
+                      <a href="Travel_Free_and_Easy.html"><img src="images/BestSeller_Alaska.jpg" alt="Alaska" class="img-fluid">
+                        <div class="caption">
+                          <img src="images/BestSeller.png" alt="best seller" class="img-fluid">
+                        </div>
+                          <h6>10D 9N Wonders of Alaska</h6>
+                      </a>
+                    </div>
+
+                    <!-- 2nd BestSeller in 2nd row: Greece -->
+                    <div class="col-sm-3 p-4 pb-5 text-center">
+                      <a href="Travel_Package.html"><img src="images/BestSeller_Greece.jpg" alt="Greece" class="img-fluid">
+                        <div class="caption">
+                          <img src="images/BestSeller.png" alt="best seller" class="img-fluid">   
+                        </div>
+                          <h6>9D 8N Greece - Historical tour</h6>
+                      </a>
+                    </div>
+
+                    <!-- 3rd BestSeller in 2nd row: Italy -->
+                    <div class="col-sm-3 p-4 pb-5 text-center">
+                      <a href="Travel_Package.html"><img src="images/BestSeller_Italy.jpg" alt="Italy" class="img-fluid">
+                        <div class="caption">
+                          <img src="images/BestSeller.png" alt="best seller" class="img-fluid">
+                        </div>
+                          <h6>8D 7N Best of Italy</h6>
+                      </a>
+                    </div>
+
+                    <!-- 4th BestSeller in 2nd row: Bali -->
+                    <div class="col-sm-3 p-4 pb-5 text-center">
+                      <a href="Travel_Free_and_Easy.html"><img src="images/BestSeller_Bali.jpg" alt="Bali" class="img-fluid">
+                        <div class="caption">
+                          <img src="images/BestSeller.png" alt="best seller" class="img-fluid">
+                        </div>
+                          <h6>5D 4N Mysterious Bali</h6>
+                      </a>
+                    </div>
+                  </div> <!-- row  -->
+                </div> <!-- carousel-item-->
+              </div>  <!-- container-fluid -->
+            </section>
+            
+            <!-- to add left and right indicators-->
+            <a class="carousel-control-prev" href="#slideshow_BestSeller" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slideshow_BestSeller" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div> <!-- slideshow_ BestSeller -->
+
+            
+          <!-- footer  -->
+
+            <footer class="row mt-5">
+              <div class="col-sm-6">
+                <img src="images/plane.png" alt="plane" style= "height:80px; width:200px;"class="img-fluid">
+                &copy; 2019 Adventure World Pte Ltd. All Rights Reserved.
+                <a title= "Terms of use and Privacy Policy" href="Travel_PrivacyPolicy.html"> Terms of use and Privacy Policy</a> 
+                
+              </div>
+            
+              <div class="col-sm-6 text-right">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/" target="_blank">
+                      <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.youtube.com/" target="_blank">
+                      <i class="fa fa-youtube fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </footer>
+    
+        </div> <!-- main container-fluid-->
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <link rel="icon" href= "images/favicon.ico" type= "image/x-icon" sizes="16x16">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Travel_Styles.css">
+
+    <!-- main container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Adventure World -About Us</title>
+</head>
+    <body>
+  
+        <header class="row">
+            <div class="col-12">
+
+                <!-- Nav  -->
+                <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+                  <div class="container">
+    
+                    <!--  logo -->
+                    <a href="index.html" class="navbar-brand text-primary">
+                      <img src="images/mapLoding_64.gif" style="height: 30px;"> Adventure World
+                    </a>
+                    
+                    <!--  collapse navigation bar-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myToggleNav" aria-controls="myToggleNav"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse justify-content-center" id="myToggleNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+    
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="Travel_Package.html" id="navbardrop" data-toggle="dropdown">
+                            Tours
+                          </a>
+                            <div class="dropdown-menu bg-secondary">
+                              <a class="dropdown-item" href="Travel_Package.html">Package</a>
+                              <a class="dropdown-item" href="Travel_Free_and_Easy.html">Free & Easy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item nav-link" href="Travel_Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item active nav-link" href="Travel_AboutUs.html">About us</a>
+                        </li>
+                      </ul>
+                    </div> <!-- navigation bar -->
+                  </div> <!-- container -->
+                </nav>
+
+              <!-- big image (image taken from Pexels-->
+                <div class="jumbotron bgimage rounded-0">
+                  <div class="col-sm-12 col-md-8 col-lg-7 col-xl-5"></div>
+                </div>       
+            </div> <!-- col- 12  -->
+        </header>
+        
+        <!-- Form: search for destination (inline format)-->
+        
+        <form class="form-inline justify-content-center p-3 bg-dark text-white" action="Travel_Package.html">
+            <label for="StartDay" class="mr-sm-2">Start Day</label>
+            <input type="date" class="form-control mb-2 mr-sm-2"id="StartDay">
+
+            <label for="EndDay" class="mr-sm-2">End Day</label>
+            <input type="date" class="form-control mb-2 mr-sm-2" id="EndDay"> 
+
+            <label for="Wheretogo" class="mr-sm-2">Where to go</label>	
+              <select name="country" class="custom-select mb-2 mr-sm-2">
+                <option selected>location</option>
+                <option value="country1" >Iceland</option>
+                <option value="country2" >Japan</option>
+                <option value="country3" >Korea</option>
+                <option value="country4">China</option>
+                <option value="country5">Maldives</option>
+              </select>
+
+            <!-- search button with search icon -->
+            <div class="input-group pb-2">
+              <label for="check" class="mr-sm-2">Check</label>
+              <div class="input-group">
+                  <button class="btn btn-info " type="submit">
+                    <i class="fa fa-search fa-1x pr-5 pl-5"></i>
+                  </button>
+              </div>
+            </div>
+        </form>
+        
+        <!-- main container -->
+        <div class="container-fluid">
+
+          <section class="row">
+        
+        <!-- breadcrumbs (Home /About us)  -->
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+              <li class="breadcrumb-item active"> About us</a></li>
+            </ul>
+          </section>
+
+          <!-- company's information (blockquotes) -->
+          <section class="row bg-light">
+            <div class="container p-5 ">
+                <h2>Why we are different...</h2>
+                <blockquote class="blockquote">
+                    <p> 
+                        Incorporated in March 1990 as a Singapore based tour agency, Adventure World has evolved into a leading travel and tour operator today. <br><br>
+                        More than just a travel agency, Adventure World's expertise in destination international faring and strategic mindsets has allowed the company 
+                        to leverage on its strengths to provide highly diverse customer base the best travel options. <br><br>
+                        From traditional tour packages to adventurous free and easy packages, 
+                        from customized private groups to business incentive trips, we have something for everyone. 
+                        <img src="images/balloon.png" alt="balloon" class="img-fluid" style="height: 60px; width:50px">
+                    </p>
+                </blockquote>
+              </div>
+          </section>
+              
+          <!--  review from travellers : title  -->
+          <article class= "col-lg text-center p-5">
+            <h4> Around the world </h4>
+                <h2> Reviews from travellers <img alt="binoculars" src="images/binoculars.png" class="img-fluid" style="height: 50px; width: 50px">
+                </h2> <!-- icon from icons8.com-->
+          </article>
+
+          <!--  card : review of travellers -->
+          <div class="container-fluid m-0 " >
+            <section class="card-group m-0 pb-5">
+            
+            <!-- images from random google search -->
+            <!-- 1st -->
+            <div class="card p-5" >
+                <img class="card-img-top rounded-circle" src="images/Traveller_review_SallyWong.jpg" 
+                alt="traveller review -Ms Sally Wong" style="width:50%"> <!-- 'rounded-circle' to make image round -->
+
+                <!-- star icons -->
+                <div class="card-body">
+                    <span class="fa fa-star checked"></span> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                
+                    <p class="card-text">
+                    This was an amazing trip! There were so many highlights... our outstanding, kind, patient, amazing leader Jacky!! 
+                    What an absolute saint. He was so organized and insightful ! Our awesome trek crew who spoiled us with outstanding food and comraderie. 
+                    We were so well cared for and it is definitely an active adventure!
+                    </p>
+                </div>
+                <div class= "card-footer bg-light">
+                    Compliments from Ms Sally Wong
+                </div>
+            </div> <!-- 1st card -->
+
+            <!-- 2nd-->
+            <div class="card p-5">
+                <img class="card-img-top rounded-circle" src="images/Traveller_review_BenLim.jpg" 
+                alt="traveller review -Mr Ben Lim" style="width:50%"> <!-- 'rounded-circle' to make image round -->
+                <div class="card-body">
+
+                    <!-- star icons -->
+                    <span class="fa fa-star checked"></span> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                
+                    <p class="card-text">
+                        “As a solo traveler, I rely on a trusted company that can get me safely from point A to B, especially when I’m unfamiliar with the area. 
+                        At the same time, I expect them to provide excellent customer service (addressing questions/concerns, employing outgoing/knowledgeable guides, etc.). 
+                        After my third trip with Adventure World, I feel safe to assume that they check all of these boxes off for me!”
+                    </p>
+                </div>
+                <div class= "card-footer bg-light">
+                    Much appreciated by Ben Lim
+                </div>
+            </div> <!-- 2nd card  -->
+        
+            <!--3rd -->
+            <div class="card p-5">
+                <img class="card-img-top rounded-circle" src="images/Traveller_review_Mr&Mrs_Yeo.jpg" 
+                alt="traveller review -Mr and Mrs Yeo" style="width: 50%"> <!-- 'rounded-circle' to make image round -->
+                <div class="card-body">
+
+                    <!-- star icons -->                  
+                    <span class="fa fa-star checked"></span> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                    <p class="card-text">
+                    "We saw a lot and are left with beautiful pictures and memories to last a lifetime. Jordan is a beautiful country, 
+                    with lots of things to do and see, and the local people are really friendly and welcoming. 
+                    We had great guides throughout our trip, and everything was perfectly arranged. 
+                    We saw and experienced so much over the course of our 10 day trip through Jordan – truly a once in a lifetime experience!"
+                    </p>
+                </div>
+                <div class= "card-footer bg-light">
+                    Many thanks from Mr and Mrs Yeo
+                </div>
+            </div> <!-- 3rd card -->
+
+            <!--4th -->
+            <div class="card p-5">
+                <img class="card-img-top rounded-circle" src="images/Traveller_review_TanFamily.jpg" 
+                alt="traveller review -Tan family" style="width: 50%"> <!-- 'rounded-circle' to make image round -->
+                <div class="card-body">
+
+                    <!-- Star icons  -->
+                    <span class="fa fa-star checked"></span> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                
+                  <p class="card-text">
+                    We have had a great experience in Beijing, China. The trip was arranged perfectly. The local expert took all our wishes into account. 
+                    The weather was cold but the guide and driver were very patient and accomodative to all our requests. The food was good and everything was very clean. 
+                    This was the most beautiful experience we had! All in all, excellent!
+                  </p>
+                </div>
+                <div class= "card-footer bg-light">
+                    From The Tans family
+                </div>
+            </div> <!-- 4th card -->
+            </section> <!-- card-group -->
+          </div> <!--  container -fluid-->
+
+
+            <!-- footer  -->
+           <footer class="row">
+            <div class="col-sm-6">
+              <img src="images/plane.png" alt="plane" style= "height:80px; width:200px;"class="img-fluid">
+              &copy; 2019 Adventure World Pte Ltd. All Rights Reserved.
+              <a title= "Terms of use and Privacy Policy" href="Travel_PrivacyPolicy.html"> Terms of use and Privacy Policy</a> 
+            </div>
+          
+            <div class="col-sm-6 text-right">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/" target="_blank">
+                    <i class="fa fa-twitter fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa fa-youtube fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div> <!-- main container  -->
+    </body>
+</html>

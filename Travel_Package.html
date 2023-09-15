@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <link rel="icon" href= "images/favicon.ico" type= "image/x-icon" sizes="16x16">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Travel_Styles.css">
+
+    <!-- main container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Adventure World -Package Tours</title>
+</head>
+    <body>
+  
+        <header class="row">
+            <div class="col-12">
+
+              <!-- big image (image taken from Pexels-->
+              <div class="jumbotron bgimage rounded-0">
+                <div class="col-sm-12 col-md-8 col-lg-7 col-xl-5"></div>
+              </div>
+                <!-- Nav-->
+                <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+                  <div class="container">
+    
+                    <!--  logo -->
+                    <a href="index.html" class="navbar-brand text-primary">
+                      <img src="images/mapLoding_64.gif" style="height: 30px;"> Adventure World
+                    </a>
+                    
+                    <!--  collapse navigation bar-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myToggleNav" aria-controls="myToggleNav"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse justify-content-center" id="myToggleNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+    
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link active dropdown-toggle" href="Travel_Package.html" id="navbardrop" data-toggle="dropdown">
+                            Tours
+                          </a>
+                            <div class="dropdown-menu bg-secondary">
+                              <a class="dropdown-item" href="Travel_Package.html">Package</a>
+                              <a class="dropdown-item" href="Travel_Free_and_Easy.html">Free & Easy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item nav-link" href="Travel_Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-item nav-link" href="Travel_AboutUs.html">About us</a>
+                        </li>
+                      </ul>
+                    </div> <!-- navigation bar -->
+                  </div> <!-- container -->
+              </nav>
+            </div> <!-- col-12 -->
+        </header>
+
+        <!-- main container -->
+        <div class="container-fluid">
+
+          <!-- Breadcrumbs (Home/ Package tours/ Free & Easy / Itinerary)-->
+
+          <section class="row">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html"> Home</a></li>
+              <li class="breadcrumb-item active"> Package Tours</a></li>
+              <li class="breadcrumb-item"><a href="Travel_Free_and_Easy.html">Free & Easy</a></li>
+              <li class="breadcrumb-item"><a href="Travel_Itinerary.html"> Itinerary</a></li>
+            </ul>
+          </section>
+       
+          <!--  Package tour : title -->
+          <div class= "row">
+            <article class="col-lg text-center p-5">
+              <h3> Around the world</h3><br>
+                <h1 class="text-primary"><img src="images/world-globe-earth-transparent-bg.png" alt="globe" 
+                class="img fluid" style= "height:60px; width:60px"> Package Tours</h1><br> 
+              <p>Contact us for more information.</p>
+              <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a>
+            </article>
+          </div>
+
+
+          <!-- Form: search for destination (vertical format)-->
+          <section class="row justify-content-center p-3 m-2">
+            <div class="col-sm-3 text-black-75 bg-light p-5 h-100 mr-5 mt-3 border border-info rounded-lg">
+          
+              <form action="Travel_Free_and_Easy.html"> <!-- check submit will go to Free & Easy page -->
+              
+                <div class="form-group">
+                  <h3 class="text-white-75 "> Tour details </h3>
+                  <label for="StartDay">Start Day</label>
+                  <input type="date" class="form-control" id="StartDay">
+                </div>
+
+                <div class="form-group">
+                  <label for="EndDay">End Day</label>
+                  <input type="date" class="form-control" id="EndDay">
+                </div>
+              
+                <label for="Wheretogo">Where to go</label>	
+                <select name="country" class="custom-select mb-2 mr-sm-3">
+                  <option selected>location</option>
+                  <option value="country1" >Iceland</option>
+                  <option value="country2" >Japan</option>
+                  <option value="country3" >Korea</option>
+                  <option value="country4">China</option>
+                  <option value="country5">Maldives</option>
+                </select>
+            
+            <!-- search button with search icon -->
+                <div class="input-group">
+                  <label for="check" class="mr-sm-2"> Check </label>
+                  <div class="input-group">
+                    <button class="btn btn-info" type="submit">
+                      <i class="fa fa-search fa-1x pr-5 pl-5"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div> <!-- col-sm-3 -->
+        
+        
+          <!--   col-sm -8 for package tour and details using aside -->
+          <!-- images from Unsplash, added box shadow -->
+            <aside class="col-sm-8 p-3 m-1 border border-success rounded-lg bg-light ">
+
+              <!-- 1st package tour -->
+              <img src="images/package_Alaska.jpg" alt="Alaska" class="img-fluid rounded-lg float-right" 
+              style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); width:33%">
+
+              <div class= "package_tour_title">
+                  <h4 class="text-primary"> 10D 7N ARCTIC CIRCLE ADVENTURE WITH KING CRAB SAFARI </h4>
+                  <h5>Up to $1000 OFF per couple (Early bird special)</h5>
+              </div>
+              <div class="package_tour_highlights p-2">
+                	<p>HIGHLIGHTS :<br>
+                	  .Dedicated Northern Lights Hunting with Local Expertise in Kirkenes & Rovaniemi<br>
+                    .1N Premium Glass Igloo Stay in Santa's Igloos Arctic Circle <br>
+                    .FREE 2 Nights Upgrade to 5* Hotel in Helsinki* (Valid for Jan - Mar 2020 departure) <br>
+                    .Exclusive: King Crab Safari during Daytime | Manua Wildlife Park & Arktikum Museum <br>
+                    .Guaranteed Winter Activities in the Daytime | Localised Cuisine, Authentic Specialised Meals <br>
+                	</p>
+                  <h5>Price from $4388 </h5>
+              </div>
+
+              <!-- Enquir and Itinerary buttons-->
+              <div class="Itinerary_and_Enquiry p-5">
+                  <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a>
+                  <a href="Travel_Itinerary.html" class="btn btn-success" role="button">View Itinerary</a>
+              </div>
+            </aside>  
+          </section> <!-- row of 1st package tour -->
+            
+            <!-- 2nd package tour -->
+            <section class= "row justify-content-end pr-5">          
+              <aside class="col-sm-8 p-4 m-3 border border-success rounded-lg bg-light">
+                <img src="images/package_china.jpg" alt="China" class="img-fluid rounded-lg float-right" 
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); width:33%">
+
+                <div class= "package_tour_title">
+                  <h4 class="text-primary">  8D WULONG/ MT. JINFO/ QIANJIANG+ CHONGQING FLOWER BLOSSOM </h4>
+                  <h5> Up to $800 OFF per couple (Early bird special)</h5>
+                </div>
+
+                <div class="package_tour_highlights p-2">
+                	<p> HIGHLIGHTS:<br>
+                    (1) Wulong: UNESCO World Heritage Site. The gorge contains three large natural bridges as well as waterfalls and caves.<br>
+                    (2) Jinfo Mountain: Karst geomorphologic landscape and abundant biological diversity.<br>          
+					          (3) Qianjiang:Zhuoshui Ancient Town | Puhua Underground River | Fuling Baiheliang Underwater Museum | Ciqikou Ancient Town | Hongya Cave | 
+					          Three Gorges Museum | Huangjuemen splendid dreamland | Tongnan Bagua field | Nanshan Botanic Garden <br>
+                    5 star hotel | DELICACIES: Chuancai Flavour, Qianjiang Flavour, Long table Feast, Tujia Flavor, local Cuisine.
+                	</p>   
+                  <h5>Price from $1398</h5>
+                </div>  
+                
+                <!-- Itinerary and Enquiry buttons -->
+                  <div class="Itinerary_and_Enquiry p-5">
+                        <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a>
+                        <a href="Travel_Itinerary.html" class="btn btn-success" role="button">View Itinerary</a>
+                  </div>
+              </aside>
+            </section> <!-- row  of 2nd package tour-->
+              
+            <!-- 3rd package tour -->
+              <section class= "row justify-content-end pr-5">
+                      
+                <aside class="col-sm-8 p-4 m-3 border border-success rounded-lg bg-light">
+                  <img src="images/package_Iceland.jpg" alt="Iceland" class="img-fluid rounded-lg float-right" 
+                  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); width:33%">
+
+                  <div class= "package_tour_title">
+                    <h4 class="text-primary"> 5D4N ICELAND NORTHERN LIGHTS - COST SAVER </h4>
+                    <h5> Tour validity: Oct 2019 to 31 Mar 2020</h5>
+                  </div>
+
+                  <div class="package_tour_highlights p-2">
+					          <p>OVERVIEW:<br>
+					              Multi-day escorted bus tour. Experience the southwest region of Iceland.
+					              On this trip, we take you to waterfalls, volcano craters, lava fields, hot springs, geysers and a national park. 
+					              The tour includes some light walks in a winter wonderland and hunting for the magical Northern Lights. 
+					              In addition, you can choose from a selection of optional excursions and activities, <br>
+					              such as a visit to the Blue Lagoon and a guided tour to South Iceland with or without a glacier hike.<br> <br>
+					              * Highlights and Experiences:<br>
+					              · Bucket list nature: waterfalls, geyser, hot springs, lava fields, volcano craters, and glaciers<br>
+					              · Bucket list northern lights: two evenings are spent to look for the magical auroras<br>
+					              · 2 nights in Reykjavík, 2 nights in South Iceland <br>
+					            </p>
+                      <h5>Price from $1268 </h5>
+
+                  </div>      
+
+                  <!-- itinerary and enquiry buttons -->
+                    <div class="Itinerary_and_Enquiry p-5">
+                        <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a>
+                        <a href="Travel_Itinerary.html" class="btn btn-success" role="button">View Itinerary</a>
+                    </div>
+                </aside>
+              </section> <!-- row of 3rd package tour -->
+
+          
+              <!-- 4th package tour -->
+              <section class= "row justify-content-end pr-5">
+      
+                <aside class="col-sm-8 p-4 m-3 border border-success rounded-lg bg-light">
+                  <img src="images/package_Korea.jpg" alt="Korea" class="img-fluid rounded-lg float-right" 
+                  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); width:33%">
+
+                  <div class= "package_tour_title">
+                    <h4 class="text-primary"> 7DAYS 5NIGHTS DREAMY KOREA</h4>
+                    <h5> Up to $300 OFF per couple (Early bird special)</h5>
+                  </div>
+
+                  <div class="package_tour_highlights p-2">
+                	  <p>HIGHLIGHTS:<br>
+                	  * Songwol-Dong Fairly Tale Villag | Nami Island | Seaweed DIY + Hanbok Wearing | Bukchon Hanok Village | Dongdaemun Market <br>
+                	  * DELICACIES: (5 Breakfasts, 3 Lunchs & 2 Dinners) <br>
+                	  - Korean Ginseng Chicken | Korean Pork Bone Soup | Palsaik Samgyupsal BBQ | Chuncheon Dakgalbi <br><br>
+                	  * ACCOMMODATION:<br>
+                	  - 2 night in High 1 Ski Resort or Similar <br>
+                	  - 3 night in Seoul Ibis Insadong Hotel or Similar <br>
+            		    </p>
+					          <h5> Price from $988</h5>
+                  </div> 
+                  
+                  <!-- itinerary and enquiry buttons-->
+                    <div class="Itinerary_and_Enquiry p-5">
+                        <a href="Travel_Contact.html" class="btn btn-info" role="button">Make an inquiry</a>
+                        <a href="Travel_Itinerary.html" class="btn btn-success" role="button">View Itinerary</a>
+                    </div>
+                </aside>
+              </section> <!-- row of 4th package tour -->
+
+              <!-- pagination (package tour and free & easy page) -->
+              <div class="container">
+                
+                <ul class="pagination justify-content-center">
+                  <li class="page-item "><a class="page-link" href="Travel_Package.html">Previous</a></li>
+                  <li class="page-item active"><a class="page-link" href="Travel_Package.html">1</a></li>
+                  <li class="page-item"><a class="page-link" href="Travel_Free_and_Easy.html">2</a></li>
+                  <li class="page-item "><a class="page-link" href="Travel_Free_and_Easy.html">Next</a></li>
+                </ul>
+              </div>
+
+              <!-- footer  -->
+
+              <footer class="row">
+                <div class="col-sm-6">
+                  <img src="images/plane.png" alt="plane" style= "height:80px; width:200px;"class="img-fluid">
+                  &copy; 2019 Adventure World Pte Ltd. All Rights Reserved.
+                  <a title= "Terms of use and Privacy Policy" href="Travel_PrivacyPolicy.html"> Terms of use and Privacy Policy</a> 
+                </div>
+          
+              <div class="col-sm-6 text-right">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/" target="_blank">
+                      <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.youtube.com/" target="_blank">
+                      <i class="fa fa-youtube fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </footer>
+          </div> <!-- main container  -->
+    </body>
+</html>
